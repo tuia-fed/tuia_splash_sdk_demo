@@ -45,7 +45,7 @@
 ### 1.2.2 app下的build.gradle添加：(最小支持minSdkVersion 14)
 
     dependencies {
-        implementation ('com.tuia:sdk_tuia_splash:1.0.8-alpha01'){
+        implementation ('com.tuia:sdk_tuia_splash:1.0.8'){
         	transitive = true
     	}
     }
