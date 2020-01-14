@@ -45,20 +45,16 @@
 ### 1.2.2 app下的build.gradle添加：(最小支持minSdkVersion 14)
 
     dependencies {
-        implementation ('com.tuia:sdk_tuia_splash:1.0.8'){
-        	transitive = true
-    	}
+        implementation ('com.tuia:sdk_tuia_splash:1.0.8')
     }
 
 ## 1.3 AndroidManifest配置
 
 ### 1.3.1.权限
 
-    //(sdk内部已经处理相关权限问题，如果遇到冲突咨询对应开发即可)
+ 
     <uses-permission android:name="android.permission.INTERNET"/>
-    //原生插屏必须权限
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+   
 
 ### 1.3.2.设置meta-data
 
@@ -73,13 +69,13 @@
             android:value="3Wq4afvvdPhyHBR29LgRwEC16gkrrFXZ5BRoL2E" />
 
 ## 1.4 运行环境配置
-本SDK可运行于Android4.0.3(API Level 15) 及以上版本。
+本SDK可运行于Android4.0.0(API Level 14) 及以上版本。
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="28" />
 
-## 1.6 初始化SDK
+## 1.5 初始化SDK
 
-### 1.6.1.初始化(重要)
+### 1.5.1.初始化(重要)
 
     在自定义的Application 的onCreate方法中，调用以下方法：（详细内容请参考demo中的代码示例）
     
