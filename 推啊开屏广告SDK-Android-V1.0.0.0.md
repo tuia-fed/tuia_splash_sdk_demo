@@ -80,7 +80,7 @@
     在自定义的Application 的onCreate方法中，调用以下方法：（详细内容请参考demo中的代码示例）
     
     //基础SDK初始化
-    TuiaAdConfig.init(this);
+    TuiaSplashAdSDK.init(this);
 
 # 2.加载广告 
 
