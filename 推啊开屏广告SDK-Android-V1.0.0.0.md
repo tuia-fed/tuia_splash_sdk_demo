@@ -93,7 +93,7 @@
 
     public class SplashActivity extends BaseActivity {
     
-    private TuiaSplashAd tuiaSplashAd;
+    private TuiaSplashAd tuiaSplashAd=new TuiaSplashAd();
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
